@@ -1,0 +1,32 @@
+a:hover   {background-color:yellow;}
+a:link    {color:black;text-decoration: none;}
+a:visited {color:black;}
+a:active  {color:yellow;}
+
+#div1
+{
+position: relative;
+height: 50px;
+width: 100px;
+margin-top:100px;
+margin-left:-150px;
+padding:0px;
+perspective:477;
+-webkit-perspective:477; /* Safari and Chrome */
+}
+
+#div4
+{
+font-family: 'Pontano', sans-serif;
+font-size:240px;
+padding:-50px;
+position: absolute;
+top:0px;
+left:-20px;
+-webkit-transform: perspective(477)
+                   translate3d(63px, -74px, -18px)
+                   scale3d(0.5, 1, 0.55)
+                   rotate3d(19, 21, 0, 6deg);
+-webkit-transform-origin: 8% 29% 48%;
+-webkit-transform-style: preserve-3d;
+}
