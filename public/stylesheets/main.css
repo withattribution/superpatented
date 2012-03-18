@@ -31,7 +31,7 @@ left:-20px;
                    scale3d(0.5, 1, 0.55)
                    rotate3d(19, 21, 0, 6deg);
 -webkit-transform-origin: 8% 29% 48%;
--moz-transform-style: preserve-3d;
+-webkit-transform-style: preserve-3d;
 -moz-transform: perspective(477)
                    translate3d(63px, -74px, -18px)
                    scale3d(0.5, 1, 0.55)
