@@ -1,5 +1,25 @@
+v2.3.0
+  * Play! framework support
+  * create web transactions using custom instrumentation
+  * use log4j instead of Java API logging
+  * bug fix: RUM auto instrumentation fixes
+  * bug fix: multiple app names in app_name setting out of order (introduced in 2.2.0)
+  * bug fix: possible java.lang.IllegalArgumentException with parameterized SQL (introduced in 2.2.0)
+  * bug fix: WebSphere instrumentation broken (introduced in 2.2.0)
+v2.2.1
+  * bug fix: ClassFormatError and NoClassDefFoundError instrumenting proxy classes
+  * bug fix: transaction trace threshold not working (introduced in 2.2.0)
+  * bug fix: infinite loop instrumenting parameterized SQL statements
+v2.2.0
+  * performance improvements
+  * support server-side configuration
+  * bug fix: byte-code instrumentation causes class loading deadlock and OS memory explosion
+v2.1.2
+  * performance improvements
+  * bug fix: parse inner select SQL statements
+  * bug fix: execute SQL statement not recognized
 v2.1.0
-  * report slow sql statements
+  * report slow SQL statements
   * performance improvements
   * continue to record metrics after transaction trace limit is reached
   * bug fix: never drop data
