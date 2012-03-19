@@ -6,7 +6,6 @@ import play.api.mvc._
 object Application extends Controller {
   
   def index = Action {
-  	  //Ok("FUCK EVERYONE")
   	  Ok(views.html.index("FUCK EVERYONE"))
   	  //Redirect(routes.Application.srysly)
   }
