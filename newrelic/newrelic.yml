@@ -89,7 +89,7 @@ common: &default_settings
   # whether or not to capture HTTP params.  When true, frameworks can
   # exclude HTTP parameters from being captured.
   # Default is false.
-  capture_params: false
+  capture_params: true
   
   # Tells transaction tracer and error collector to not to collect
   # specific http request parameters. 
