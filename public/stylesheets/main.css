@@ -2,7 +2,30 @@ a:hover   {background-color:yellow;}
 a:link    {color:black;text-decoration: none;}
 a:visited {color:black;}
 a:active  {color:yellow;}
-
+img.pos_fixed_left
+{
+position:fixed;
+top:100px;
+left:0px;
+z-index:-1;
+}
+.pos_fixed_right
+{
+position:fixed;
+top:100px;
+right:0px;
+z-index:-1;
+}
+.pos_fixed_middle
+{
+font-family: 'Londrina Solid', cursive;
+font-size:50px;
+position:fixed;
+top:140px;
+left:674px;
+z-index:-2;
+background-color:yellow;
+}
 #div1
 {
 position: relative;
@@ -13,42 +36,52 @@ margin-left:-150px;
 padding:0px;
 perspective:477;
 -webkit-perspective:477; /* Safari and Chrome */
--moz-perspective:477; /* Safari and Chrome */
--o-perspective:477; /* Safari and Chrome */
--ms-perspective:477; /* Safari and Chrome */
+-moz-perspective:477; 
+-o-perspective:477; 
+-ms-perspective:477; 
+}
+
+#div2
+{
+font-family: 'Londrina Outline', cursive;
+font-size:100px;
+padding:-50px;
+position: absolute;
+top:450px;
+left:-20px;
+-webkit-transform: translate(100px) rotate(-20deg);
+-webkit-transform-origin: 8% 29% 48%;
+-webkit-transform-style: preserve-3d;
+}
+#div3
+{
+height: 50px;
+width: 100px;
+margin-top:100px;
+margin-left:-150px;
+position:fixed;
+right:0px;
+z-index:-1;
+padding:0px;
+perspective:477;
+-webkit-perspective:477; /* Safari and Chrome */
+-moz-perspective:477; 
+-o-perspective:477; 
+-ms-perspective:477; 
 }
 
 #div4
 {
-font-family: 'Pontano', sans-serif;
-font-size:240px;
-padding:-50px;
-position: absolute;
-top:0px;
-left:-20px;
--webkit-transform: perspective(477)
-                   translate3d(63px, -74px, -18px)
-                   scale3d(0.5, 1, 0.55)
-                   rotate3d(19, 21, 0, 6deg);
+font-family: 'Londrina Outline', cursive;
+font-size:100px;
+padding-right:150px;
+position:fixed;
+right:0px;
+z-index:-1;
+top:495px;
+-webkit-transform: translate(100px) rotate(20deg);/* Safari and Chrome */
 -webkit-transform-origin: 8% 29% 48%;
 -webkit-transform-style: preserve-3d;
--moz-transform: perspective(477)
-                   translate3d(63px, -74px, -18px)
-                   scale3d(0.5, 1, 0.55)
-                   rotate3d(19, 21, 0, 6deg);
--moz-transform-origin: 8% 29% 48%;
--moz-transform-style: preserve-3d;
--o-transform: perspective(477)
-                   translate3d(63px, -74px, -18px)
-                   scale3d(0.5, 1, 0.55)
-                   rotate3d(19, 21, 0, 6deg);
--o-transform-origin: 8% 29% 48%;
--o-transform-style: preserve-3d;
--ms-transform: perspective(477)
-                   translate3d(63px, -74px, -18px)
-                   scale3d(0.5, 1, 0.55)
-                   rotate3d(19, 21, 0, 6deg);
--ms-transform-origin: 8% 29% 48%;
--ms-transform-style: preserve-3d;
-
+transform: translate(100px) rotate(20deg);
+transform-origin: 60% 100%;
 }
