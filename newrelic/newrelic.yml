@@ -19,7 +19,7 @@ common: &default_settings
   # Agent Enabled
   # Use this setting to force the agent to run or not run.
   # Default is true.
-  agent_enabled: true
+  # agent_enabled: true
   
   # Set to true to enable support for auto app naming.
   # The name of each web app is detected automatically
@@ -49,7 +49,7 @@ common: &default_settings
   # This setting is dynamic, so changes do not require restarting your application.
   # The levels in increasing order of verboseness are: off, severe, warning, info, fine, finer, finest
   # Default is info.
-  log_level: fine
+  log_level: info
   
   # The number of log files to use.
   # Default is 1.
@@ -167,6 +167,13 @@ common: &default_settings
     # When this property is commented out it defaults to ignoring 404s.
     #
     # ignore_status_codes: 404
+
+    # Report a stall error if the transaction has not finished and lasted longer than the threshold.
+    # A transaction is checked every minute.
+    # Only one error is reported per transaction.
+    # Default is 300 seconds (5 minutes).
+    #
+    # stall_threshold: 300.0
 
   # Thread profiler measures wall clock time, CPU time, and method call counts
   # in your application's threads as they run.

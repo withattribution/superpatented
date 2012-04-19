@@ -1,3 +1,19 @@
+v2.4.2
+  * bug fix: ClassLoader.loadClass deadlock (introduced in 2.4.0)
+v2.4.1
+  * bug fix: AssertionError in WebLogic (introduced in 2.2.0)
+v2.4.0
+  * bug fix: ClassNotFoundException with JBoss AS 7 (introduced in 2.2.0)
+  * bug fix: NoClassDefFoundError with Glassfish 3.1.2 (introduced in 2.2.0)
+  * bug fix: ClassCastException with Glassfish 3.1.1 (introduced in 2.2.0)
+  * bug fix: Agent stops reporting web transactions (introduced in 2.2.0)
+  * bug fix: possible unknown host for external call with HttpClient 3.0.1 (introduced in 2.3.0)
+  * bug fix: stall error reporting broken
+  * bug fix: external call reported as unknown host
+  * bug fix: agent_enabled setting not working
+  * add stall_threshold setting for reporting stall errors
+v2.3.1
+  * bug fix: Agent logging breaks webapp log4j configuration (introduced in 2.3.0)
 v2.3.0
   * Play! framework support
   * create web transactions using custom instrumentation
