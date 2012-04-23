@@ -3,15 +3,4 @@ a:link    {color:black;text-decoration: none;}
 a:visited {color:black;}
 a:active  {color:yellow;}
 
-/*html,body { width:100%; height:100%; marginRatio:0; padding:0; overflow:hidden; }
-*/
 img { position:fixed; left:0px; top:0px; z-index:1000; }
-body { background-image:url('super_patented_pattern.png'); z-index:1000;}
-r.div 
-{
-  background-image:url(super_patented_pattern.png);
-  width: 100%;
-  float: left;
-  z-index: 2000;
-  position: fixed;
-}
